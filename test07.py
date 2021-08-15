@@ -13,6 +13,7 @@ class Car:
 
     def __iter__(self):
         return iter(self.id)  # iter 함수로 변수 id의 iterator 객체를 반환
+    ###
 
 
 def main():
@@ -24,5 +25,6 @@ def main():
 
     for i in cc:  # Car 객체가 iterable 객체이므로 가능.(특수 메서드 __iter__(self))
         print(i, end=' ')
+
 
 main()
