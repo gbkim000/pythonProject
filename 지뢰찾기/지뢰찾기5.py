@@ -1,7 +1,7 @@
 import numpy as np
 size = list(map(int, input('격자의 크기를 입력하세요. m*n -> m n : ').split()))
 datas = []
-if len(size) != 2:기
+if len(size) != 2:
     print('사이즈를 잘못 입력하셨습니다.')
     raise ValueError
 else:

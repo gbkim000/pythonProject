@@ -16,5 +16,5 @@ kernel = np.ones((3, 3))
 result = signal.convolve2d(mine, kernel, 'same')
 result[r, c] = 0
 
-print mine
-print result
+print(mine)
+print(result)
