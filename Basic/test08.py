@@ -30,6 +30,6 @@ def main():
     print('')
     for i in co:
         print(i, end=', ')
-        
+    print("\n------------------")
 main()
 
