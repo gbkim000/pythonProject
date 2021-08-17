@@ -18,7 +18,7 @@ if __name__ == '__main__':
     num = 10
     x = [None] * num
 
-    print('버블 정렬을 수행합니다.')
+    print('선택 정렬을 수행합니다.')
     for i in range(num):
         # x[i] = int(input(f'x[{i}:] '))
         x[i] = randint(1, 100)

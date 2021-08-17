@@ -28,7 +28,7 @@ if __name__ == '__main__':
     num = 100
     x = [None] * num
 
-    print('쉘 정렬을 수행합니다.')
+    print('재귀적 퀵 정렬을 수행합니다.')
     for i in range(num):
         # x[i] = int(input(f'x[{i}:] '))
         x[i] = randint(1, 100)
