@@ -1,16 +1,19 @@
-# import sys
-# sys.path.append("C:\Users\FAMILY\PycharmProjects\pythonProject\chap04")
+import sys
 from random import *
-from stack import Stack
 from typing import MutableSequence
 
+from stack import Stack
+
+
+# sys.path.append("C:\\Users\\FAMILY\\PycharmProjects\\pythonProject\\") # 절대경로 지정
+# from chap04.stack import Stack
 
 def qsort(a: MutableSequence, left: int, right: int) -> None:
-    range = Stack(right - left + 1)
-    range.push((left, right))
+    sRange = Stack(right - left + 1)
+    sRange.push((left, right))  # 스택에 튜플 '(left, right)' 값을 저장
 
-    while not range.is_empty():
-        pl, pr = left, right = range.pop()
+    while not sRange.is_empty():
+        pl, pr = left, right = sRange.pop()
         x = a[(left + right) // 2]
         while pl <= pr:
             while a[pl] < x: pl += 1
@@ -19,12 +22,12 @@ def qsort(a: MutableSequence, left: int, right: int) -> None:
                 a[pl], a[pr] = a[pr], a[pl]
                 pl += 1
                 pr -= 1
-        if left < pr: range.push((left, pr))
-        if pl < right: range.push((pl, right))
+        if left < pr: sRange.push((left, pr))
+        if pl < right: sRange.push((pl, right))
 
 
-def quick_sort(a: MutableSequence) -> None:
-    qsort(a, 0, len(a) - 1)
+# def quick_sort(a: MutableSequence) -> None:
+#     qsort(a, 0, len(a) - 1)
 
 
 if __name__ == '__main__':
@@ -39,7 +42,9 @@ if __name__ == '__main__':
         x[i] = randint(1, 100)
         print(f'{x[i]:4}', end='')
 
-    quick_sort(x)
+    # quick_sort(x)
+    qsort(x, 0, len(x)-1)
+
     print()
     print('-' * 4 * num)
 
