@@ -25,3 +25,4 @@ data = enumerate("재미있는 파이썬")
 for i, value in data:
     print(i, ":", value)
 print()
+
