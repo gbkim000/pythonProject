@@ -29,6 +29,7 @@ def heap_sort(a: MutableSequence) -> None:
         a[0], a[i] = a[i], a[0]
         down_heap(a, 0, i - 1)
 
+
 if __name__ == '__main__':
 
     # num = int(input(('정렬할 자료 갯수: ')))
@@ -47,4 +48,3 @@ if __name__ == '__main__':
     print('-' * 20)
     for i in range(num):
         print(f'x[{i}] = {x[i]}')
-
