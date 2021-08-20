@@ -57,4 +57,3 @@ if __name__ == '__main__':
     print('-' * 20)
     for i in range(num):
         print(f'x[{i}] = {x[i]}')
-
