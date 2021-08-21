@@ -13,7 +13,7 @@ def kmp_match(txt: str, pat: str) -> int:
             skip[pt] = pp
         elif pp == 0:
             pt += 1
-            skip[pt] = pp
+            skip[pt] = 0  # pp
         else:
             pp = skip[pp]
 
@@ -46,8 +46,12 @@ def kmp_match(txt: str, pat: str) -> int:
 
 if __name__ == '__main__':
 
-    s1 = input('텍스트 입력: ')
-    s2 = input('패턴 입력: ')
+    # s1 = input('텍스트 입력: ')
+    # s2 = input('패턴 입력: ')
+
+    s1 = "abaabacabaaccabacabacabaacabacababcababcaac";
+    # s2 = "ABACABAAC";
+    s2='ababcababc'
 
     idx = kmp_match(s1, s2)
 
