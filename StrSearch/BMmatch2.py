@@ -7,7 +7,6 @@ def BM(pat: str, txt: str) -> int:
     for pt in range(len(pat)):
         skip[ord(pat[pt])] = len(pat) - pt - 1
 
-    pt = len(pat) - 1
     while pt < len(txt):
         pp = len(pat) - 1
         while txt[pt] == pat[pp]:
@@ -24,7 +23,6 @@ def BM(pat: str, txt: str) -> int:
 
     return -1
 
-
-print(BM('ABCXYABCXY', 'ABCXAABCXYABCXY'))
 print(BM('ABC', 'ABABCDEFGHA'))
 print(BM("ATION", "VISOINQUESTIONONIONCAPTIONGRADUATION"))
+print(BM('ABCXYABCXY', 'saaABCXYABCXY'))
