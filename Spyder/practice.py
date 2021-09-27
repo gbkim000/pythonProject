@@ -1,8 +1,7 @@
 # (방법1)
-# import travel.thailand
 # import 문의 마지막은 항상 모듈이나, 패키지만 올 수 있음
 # 즉, from ~ import문을 사용할 때처럼, 클래스나 함수를 직접 임포트 할 수 없음.
-#
+# import travel.thailand
 # trip1 = travel.thailand.ThailandPackage()    # 객체 생성
 # trip1.detail()
 
