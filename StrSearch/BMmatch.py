@@ -14,6 +14,7 @@ def BM(p, txt):
     tlen = len(txt)
     skip = initSkip(p)
 
+
     i = plen - 1
     j = plen - 1
 
