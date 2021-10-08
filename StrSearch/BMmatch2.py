@@ -23,6 +23,7 @@ def BM(pat: str, txt: str) -> int:
 
     return -1
 
+
 print(BM('ABC', 'ABABCDEFGHA'))
 print(BM("ATION", "VISOINQUESTIONONIONCAPTIONGRADUATION"))
 print(BM('ABCXYABCXY', 'saaABCXYABCXY'))
