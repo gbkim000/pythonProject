@@ -8,14 +8,14 @@ class Person:
         return "Nice to meet you !!!"
     
     def _hello(self): # protected method
-        return "Hello {}, {}".format( self.name, self.__get_trailing_text())
+        return "Hello {}, {}".format(self.name, self.__get_trailing_text())
     
     def hello(self): # public method
         print(self._hello())
 
 class Man(Person):
-##    def __init__(self, name):
-##        self.name=name+" sir"
+    def __init__(self, name):
+        self.name = name + " sir"
     
     def _hello(self):
         # self.__get_trailing_text() 사용 불가
