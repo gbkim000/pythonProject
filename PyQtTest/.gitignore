@@ -1,0 +1,6 @@
+.spyproject/
+!.gitignore
+**/__pycache__/
+build/
+
+data.txt
